@@ -1,0 +1,120 @@
+{
+  "basics": {
+    "name": "Allen Gooch",
+    "label": "Programmer",
+    "picture": "",
+    "email": "allen.gooch@gmail.com",
+    "phone": "(512) 496-3401",
+    "website": "http://allengooch.me",
+    "summary": "Senior software engineer with systems programming, applications development, and technology leadership experience over full lifecycle of large-scale distributed systems, massively-multiplayer, and peer-to-peer games.",
+    "location": {
+      "address": "2408 Drifting Leaf Drive",
+      "postalCode": "TX 78613",
+      "city": "Cedar Park",
+      "countryCode": "US",
+      "region": "Texas"
+    }
+  },
+  "work": [
+    {
+      "company": "BioWare Austin",
+      "position": "Software Engineer",
+      "website": "http://www.bioware.com/en/studios/bioware-austin/",
+      "startDate": "2013-12-01",
+      "endDate": "2014-12-01",
+      "summary": "Developed server infrastructure for 'Star Wars: The Old Republic', a massively-multiplayer online role-playing game, and other titles.",
+      "highlights": [
+        "Led design and implementation of system for collection and real-time querying of metrics exported by game services.",
+        "Led design and implementation of system for configuration, provisioning, and control of game services and hosts.",
+        "Ported MMO engine and supporting technologies used by MMO game services from 32-bit Windows platform to 64-bit Linux platform.",
+	"Managed team responsible for tooling, configuration and control of MMO game services.",
+        "Led design and implementation of custom matchmaking system."
+      ]
+    },
+    {
+      "company": "Midway Studios",
+      "position": "Senior Software Engineer",
+      "website": "",
+      "startDate": "2013-12-01",
+      "endDate": "2014-12-01",
+      "summary": "Lead multiplayer engineer responsible for multiplayer technology for unannounced title on Xbox 360 and PS3 consoles.",
+      "highlights": [
+        "Worked with design and art in creating a fun and rewarding console multiplayer experience.",
+        "Created schedules, tasking for multiplayer engineering team.",
+	"Assisted Blacksite: Area 51 team with user interface, matchmaking, TCR/TRC, and Xbox Live programming tasks.",
+	"Performed evaluation of Quazal matchmaking middleware solution for use by Midway Studios."
+      ]
+    }
+    
+  ],
+  "education": [
+    {
+      "institution": "James Madison University",
+      "area": "Music Theory and Composition",
+      "studyType": "Bachelor of Music"
+    },
+    {
+      "institution": "Liberty University",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Network, Distributed Systems, and Database Development",
+      "level": "Master",
+      "keywords": [
+        "C++",
+        "Python",
+        "BSD Sockets",
+        "WinSock",
+        "Linux",
+        "Windows",
+        "Oracle Database",
+        "PostgreSQL",
+        "SQLite"
+      ]
+    },
+    {
+      "name": "Game Development",
+      "level": "Master",
+      "keywords": [
+        "C++",
+        "C#",
+        "Linux",
+        "Windows",
+        "Unreal Engine",
+        "Frostbite Engine",
+        "Hero Engine"
+      ]
+    },
+    
+    {
+      "name": "Python Development",
+      "level": "Master",
+      "keywords": [
+        "Python",
+        "Flask"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "Intermediate",
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "NodeJS",
+        "MeteorJS",
+        "MongoDB",
+        "AngularJS",
+        "ReactJS",
+        "jQuery",
+	"Phonegap/Cordova",
+	"Android",
+	"iOS",
+	"Java"
+      ]
+    }
+  ]
+}
