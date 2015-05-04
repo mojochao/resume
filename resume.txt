@@ -1,0 +1,324 @@
+			     Allen Gooch
+		       2408 Drifting Leaf Drive
+			 Cedar Park, TX 78613
+			     512.496.3401
+			allen.gooch@gmail.com
+
+SUMMARY
+
+    Senior software engineer with extensive network and systems
+programming, applications development, and technology leadership
+experience over full lifecycle of large-scale distributed systems,
+web applications, and massively-multiplayer and peer-to-peer
+online games.
+
+
+SKILLS
+
+* Experience in leading high-performance, effective teams in
+  developing high-quality technology solutions.
+
+* Expertise in distributed systems development including low-level
+  socket communications, protocol design, network security, network
+  topologies and infrastructure, communications middleware, and
+  fault-tolerant, high-performance, high-availability distributed
+  computing architectures.
+
+* Expertise in applying network programming skills to problems
+  inherent to online games in peer-to-peer and client-server
+  distribution architectures.
+
+* Expertise in the analysis, design and implementation of
+  object-oriented, component-based, and functional programming
+  software systems.
+
+* Proficiency in web technologies and web application development.
+
+* Expertise in software configuration management, release management,
+  and software process improvement.
+
+* Expertise in tools and technologies development creating
+  well-documented, robust, and reusable tools, libraries, components
+  and SDKs.
+	 
+* Expertise in agile, iterative and incremental methodologies, unit
+  testing, and continuous integration.
+
+* Expertise in systems administration of Linux, Unix, Windows and
+  VMS servers.
+
+
+TECHNOLOGIES
+
+* Expertise in C++ and C on UNIX, Linux, and Windows platforms
+
+* Expertise in Python
+
+* Proficiency with Lisp, Java, C#, JavaScript, HTML, CSS, XML, SQL
+
+* Database: Microsoft SQL Server, PostgreSQL, MySQL, Oracle, MongoDB
+
+* Revision Control: Git, Perforce, Subversion, CVS
+
+* Project Management: Microsoft Project, Microsoft Excel, FogBugz,
+  JIRA, Hansoft, DevTrack
+
+* Platforms: Microsoft Windows and Windows Server, Linux, Mac OS X,
+  HP-UX, Solaris, Sony PSP, Sony PS3, Sony PS4, Xbox 360, XBox One
+
+
+EXPERIENCE
+
+Senior Software Engineer
+BioWare/Electronic Arts, Austin, TX
+2007-2015
+
+* Led design and implementation of Biomon system, a system for collection
+  and real-time querying of metrics exported by 'Star Wars: The Old
+  Republic' MMO game services.
+
+* Ported MMO engine and supporting technologies used by 'Star Wars: The Old
+  Republic' MMO game services from 32-bit Windows platform to 64-bit Linux
+  platform.
+
+* Led team responsible for configuration, provisioning and control of
+  'Star Wars: The Old Republic' MMO game and auxiliary services and provided
+  support to its Development, Build, Configuration Management and Operations
+  customers.
+
+* Led design and implementation of custom matchmaking system for cancelled
+  title for XBox One and PS4 consoles.
+
+
+Senior Software Engineer
+Midway Studios, Austin, TX
+2006-2007
+
+* Lead multiplayer engineer responsible for multiplayer technology for
+  unannounced title on Xbox 360 and PS3 consoles.
+
+* Worked with design and art in creating a fun and rewarding console
+  multiplayer experience.
+
+* Created schedules, tasking for multiplayer engineering team. 
+
+* Assisted Blacksite: Area 51 team with user interface, matchmaking,
+  TCR/TRC, and Xbox Live programming tasks. 
+
+* Performed evaluation of Quazal matchmaking middleware solution for
+  use by Midway Studios. 
+
+
+Senior Software Engineer
+Sony Computer Entertainment America,  Foster City, CA
+2005-2006
+
+* Primary engineer responsible for multiplayer aspects of PSP product
+  under development.  Multiplayer feature set included game share,
+  downloadable content from Internet site or Adhoc peer, and Adhoc
+  multiplayer game play. 
+
+* Evolved a legacy C code base to a more flexible C++ one capable of
+  supporting maintenance and enhancement of primary product line at a
+  much greater rate of delivery. 
+
+* Performed migration from Visual Source Safe to Perforce and provided
+  Perforce support to product development team. 
+
+* Defined and instituted issue tracking solution for project,
+  integrated with Perforce solution for full traceability of
+  repository changes to issues necessitating the change. 
+
+
+Senior Software Engineer
+Video Gaming Technologies, Charlottesville, VA
+2004-2005
+
+* Defined and installed networking infrastructure/services to support
+  development efforts in new engineering division.  This included
+  installation and administration of firewalls, hardware and software
+  VPNs, intranets, defect tracking solution, and configuration
+  management solution in heterogeneous multi-site Linux/Windows Server
+  2003 environment. 
+
+* Developed lightweight, portable C++ COM framework capable of
+  providing dynamically loadable components on DOS, Windows, and Linux
+  platforms. 
+
+* Extended a proprietary networking middleware system (OMEGA) to
+  provide dynamic service discovery and provisioning enabling all
+  single points of failure to be removed from primary casino services
+  product, and enabling highly-availability and self-healing casino
+  gaming service networks. 
+
+* Evolved a legacy C++ client code base to a more flexible system
+  capable of supporting maintenance and enhancement of primary product
+  line at a much greater rate of delivery. 
+
+* Developed patent-pending casino cashless gaming system providing
+  capabilities to customers at a lower price point enabling greater
+  customer retention and customer acquisition.
+
+* Integrated casino cashless gaming system with multiple third-party
+  cashless gaming web services.
+
+* Defined, documented, and instituted software processes, coding
+  standards, roles, activities, and methodologies. 
+
+* Developed continuous integration tools in Python to enable automatic
+  builds, deployment and test plan execution of primary casino gaming
+  clients and services product. 
+
+
+Contractor
+Darden Solutions, Charlottesville, VA
+2003-2004
+
+* Developed three-tier career development Java system for a
+  customizable suite of applications developed for and deployed by
+  many top graduate business schools. 
+
+* Developed reusable Java web components for web presentation layer.
+
+Consultant
+Ubisoft, Montreal, Quebec
+2003
+
+* Analyzed existing proprietary and third-party networking tools and
+  technologies for fitness in peer-to-peer matchmaking and leader board
+  systems.
+
+* Analyzed resources and processes in game networking group for
+  fitness in meeting business goals as related to corporate-wide
+  multiplayer initiatives. 
+
+* Made recommendations for future development of multiplayer game
+  technologies.
+
+
+Senior Software Engineer
+Maxis, Charlottesville, VA
+2002-2003
+
+* Lead engineer responsible for various pieces of server software
+  infrastructure for The Sims Online (TSO), a massively-multiplayer
+  online game (MMOG). 
+
+* Successfully led development team on high-risk, high-return project
+  to add user stream encryption capabilities to the middleware
+  platform (ARIES) providing significant risk-reduction of network
+  attacks.
+
+* Successfully led development team on project to add enhanced user
+  authorization capabilities to the ARIES platform.  This project
+  provided significant performance gains, lower complexity and greater
+  functionality than the previously existing solution.
+
+* Successfully led project to integrate TSO server systems with
+  Electronic Arts (EA) online authentication/authorization systems.
+
+* Developed continuous integration tools in Python to enable automatic
+  builds, deployment and test plan execution of all ARIES platform
+  code and the C++ and Java SDKs. 
+
+
+Senior Software Engineer
+Electronic Arts, Charlottesville, VA
+2001-2002
+
+* Producer and technical lead responsible for tools and technologies
+  supporting online game development customers within Electronic Arts.
+  These tools included the ARIES Online Environment, a service runtime
+  for MMOG applications; Cadence, Component-Based Development SDKs of
+  plug-and-play C++ and Java binary components, and Voltron, a source
+  framework for MMOG development. 
+
+* Successfully led development team on project to add dynamic service
+  discovery and provisioning to the ARIES Online Environment.
+  This project facilitated new and resilient service topologies and
+  resulted in increased availability and reliability of network
+  services, increased uptime and a better user experience. 
+
+* Successfully led development team on project providing reusable C++
+  and Java binary components for instrumentation and remote
+  monitoring/management of ARIES network services.
+
+
+Lead Software Engineer
+WebG2, Charlottesville, VA
+2000
+
+* Developed demonstration technology of online marketing intelligence
+  gathering/reporting system.
+
+* Designed and implemented metadata-driven code generation tools.
+  This allowed single-source representation of problem-domain
+  concepts, which prevented code duplication, reduced defect rates,
+  and provided total synchronization of generated C++, Java and SQL
+  source code artifacts. 
+
+* Successfully instituted eXtreme Programming methodologies enabling
+  predictable software delivery at a lower defect rate than previously
+  possible. 
+
+
+Senior Software Engineer
+EA.com, Charlottesville, VA
+2000
+
+* Post-acquisition of Kesmai by Electronic Arts, lobbied for adoption of
+  proprietary middleware platform (ARIES) for Massively-Multiplayer Online
+  Game development within EA. 
+
+* Technical lead responsible for the continued evolution and
+  development of the ARIES Online Environment and SDKs for EA.
+
+* Successfully led project to provide enterprise-wide metrics
+  collection SDKs for MMOG development within EA. 
+
+
+Software Engineer
+Kesmai, Charlottesville, VA
+1997-2000
+
+* Technical lead responsible for the continued evolution and
+  development of the ARIES Online Environment and SDKs. 
+
+* Successfully led initiative to enhance quality of deliverables
+  through automated builds, continuous integration and testing, and
+  consistent documentation of SDKs, standards and practices. 
+
+* Architect and project lead of Voltron, a reusable white-box
+  object-oriented C++/Java framework for game services running in the
+  ARIES online environment. 
+
+* Successfully delivered tested and documented C++ and Java binary
+  component-based development SDKs, resulting in an explosion of usage
+  of these components, and allowing greater flexibility in managing
+  and upgrading of existing applications. 
+
+* Started mentoring program within Tools and Technologies division to
+  disseminate knowledge to junior programmers and enable continuous
+  improvement of software development practices. 
+
+* Initial member of Software Process Improvement initiative within
+  Kesmai.  This task force defined the software development and peer
+  review processes for all software developed in-house. 
+
+
+Systems Programmer
+James Madison University, Harrisonburg, VA
+1995-1997
+
+* Custom multicore concurrency server programming in HP-UX and VMS
+  environments.
+
+* Systems and network administration of heterogeneous HP-UX, HP MPE/iX,
+  OpenVMS, and NetWare environment.
+
+
+EDUCATION
+
+James Madison University	
+Harrisonburg, VA
+B.M. Music Theory and Composition (incomplete)
