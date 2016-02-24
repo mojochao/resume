@@ -1,5 +1,5 @@
 .idea/
+node_modules/
 *.html
 *.md
 *.pdf
-*.pyc

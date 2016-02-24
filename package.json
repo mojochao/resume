@@ -1,0 +1,23 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "My resume.",
+  "main": "index.js",
+  "scripts": {
+    "html": "./node_modules/.bin/resume --force export resume.html",
+    "pdf": "./node_modules/.bin/resume --force export resume.pdf",
+    "deploy": "scp resume.html root@allengooch.me:/var/www/allengooch.me/public_html/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mojochao@bitbucket.org/mojochao/resume.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "Allen Gooch",
+  "license": "ISC",
+  "homepage": "http://allengooch.me/",
+  "dependencies": {
+  }
+}

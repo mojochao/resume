@@ -1,0 +1,198 @@
+{
+  "basics": {
+    "name": "Allen Gooch",
+    "label": "Senior Software Engineer",
+    "email": "allen.gooch@gmail.com",
+    "phone": "512.496.3401",
+    "website": "http://allengooch.me",
+    "summary": "Senior software engineer with systems programming, applications development, and technology leadership experience over full lifecycle of large-scale distributed systems, massively-multiplayer client-server and peer-to-peer online games.",
+    "location": {
+      "address": "2408 Drifting Leaf Drive",
+      "postalCode": "TX 78613",
+      "city": "Cedar Park",
+      "countryCode": "US",
+      "region": "Texas"
+    }
+  },
+  "work": [
+    {
+      "company": "Zynga",
+      "position": "Senior Software Engineer",
+      "startDate": "2015-06-28",
+      "endDate": "2016-01-21",
+      "summary": "Software engineer responsible for maintenance and continued evolution of Wizard of Oz Slots, a social casino slots game for Facebook, iOS, Android and Kindle.",
+      "highlights": [
+        "Implemented various features for increased user engagement and retention.",
+	"Migrated server hosting to Amazon Web Services S3."
+      ]
+    },
+    {
+      "company": "BioWare / Electronic Arts",
+      "position": "Software Engineer",
+      "startDate": "2007-11-26",
+      "endDate": "2015-03-31",
+      "summary": "Software engineer responsible for server infrastructure for 'Star Wars: The Old Republic', a massively-multiplayer online role-playing game.",
+      "highlights": [
+        "Ported MMO engine and supporting technologies used by MMO game services from 32-bit Windows platform to 64-bit Linux platform.",
+        "Developed system for collection and real-time querying of metrics exported by game services for debugging and analytics use.",
+        "Developed system for configuration, provisioning, and control of game services and hosts."
+      ]
+    },
+    {
+      "company": "Midway Studios",
+      "position": "Senior Software Engineer",
+      "startDate": "2006-06-05",
+      "endDate": "2007-11-08",
+      "summary": "Lead software engineer responsible for online multiplayer for cancelled Xbox 360 and PS3 console game.",
+      "highlights": [
+        "Implemented prototypes with design and art disciplines to create fun and rewarding console multiplayer experiences.",
+        "Created schedules, tasking for multiplayer engineering team.",
+	"Assisted Blacksite: Area 51 team with user interface, matchmaking, TCR/TRC, and Xbox Live programming tasks."
+      ]
+    },
+    {
+      "company": "Sony Computer Entertainment America",
+      "position": "Senior Software Engineer",
+      "startDate": "2005-06-29",
+      "endDate": "2006-04-07",
+      "summary": "Lead network engineer responsible for online multiplayer aspects of PSP product under development.",
+      "highlights": [
+        "Evolved a legacy C code base to a more flexible C++ one capable of supporting maintenance and enhancement of primary product line at a much greater rate of delivery.",
+        "Performed migration from Visual Source Safe to Perforce and provided Perforce support to product development team.",
+	"Integrated JIRA with Perforce solution for full traceability of repository changes to issues necessitating the change."
+      ]
+    },
+    {
+      "company": "Video Gaming Technologies",
+      "position": "Senior Software Engineer",
+      "startDate": "2004",
+      "endDate": "2005",
+      "summary": "Lead network engineer responsible for development of proprietary networking services and infrastructure, and integration with external casino network service infrastructure.",
+      "highlights": [
+        "Defined and installed networking infrastructure/services to support development and testing in new engineering division, including installation and administration of firewalls, hardware and software VPNs, intranets, defect tracking solution, and configuration management solution in heterogeneous multi-site Linux/Windows Server 2003 environment.",
+        "Developed lightweight, portable C++ component library providing dynamically loadable components on MS-DOS(!), Windows, and Linux platforms.",
+    	"Evolved a proprietary networking middleware system to provide dynamic service discovery and provisioning enabling all single points of failure to be removed from primary casino services product, and enabling highly-availability and self-healing casino gaming service network topologies.",
+	"Developed casino cashless gaming system and integrated with multiple third-party cashless gaming web services.",
+	"Developed continuous integration tools in Python to enable automatic builds, deployment and test plan execution of primary casino gaming clients and services product.",
+	"Developed software processes, coding standards, roles, activities, and methodologies used by division."
+      ]
+    },
+    {
+      "company": "Darden Solutions",
+      "position": "Contract J2EE Developer",
+      "startDate": "2003",
+      "endDate": "2004",
+      "summary": "Contract programmer for a three-tier Java J2EE commercial product suite of applications used by many top graduate business schools for all aspects of participation from admissions to alumni.",
+      "highlights": [
+	"Developed graduate business school career development system with JBoss, Spring, Hibernate and Microsoft SQL Server.",
+	"Developed reusable Java web components for web presentation layer in graduate business school product suite."
+      ]
+    },
+    {
+      "company": "Electronic Arts",
+      "position": "Software Engineer",
+      "startDate": "2000-02-05",
+      "endDate": "2003",
+      "summary": "Server engineer responsible for various pieces of server software infrastructure for EA.com and The Sims Online (TSO), a massively-multiplayer online game (MMOG).",
+      "highlights": [
+	"After acquisition of Kesmai continued to develop online game middlware product for use within EA.",
+	"Development of user stream encryption system for custom middleware product providing significant risk-reduction of network attacks.",
+	"Development of enhanced user authorization system for middleware product.",
+	"Development of metrics collection system for middleware product",
+	"Development of continuous integration tools in Python to enable automatic builds, deployment and test plan execution of middleware product C++ and Java APIs and services.",
+	"Development of TSO server systems in terms of middleware product",
+	"Integration of TSO server systems with Electronic Arts authentication/authorization systems."
+      ]
+    },
+    {
+      "company": "Kesmai",
+      "position": "Software Engineer",
+      "startDate": "1997",
+      "endDate": "2000",
+      "summary": "Server programmer responsible for online game and middleware development.",
+      "highlights": [
+	"Development of game server systems for Air Warrior II, an online multiplayer World War II combat flight simulator.",
+	"Development of online game middleware product providing C++ and Java APIs and service runtimes for MMOG applications.",
+	"Member of Software Process Improvement initiative responsible for defining and measuring the software development and peer review processes."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "James Madison University",
+      "area": "Music Theory and Composition",
+      "studyType": "Bachelor of Music (incomplete)"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Network and Distributed Systems Development",
+      "level": "Master",
+      "keywords": [
+        "C++",
+        "C#",
+	"Java",
+	"Python",
+        "Sockets"
+      ]
+    },
+    {
+      "name": "Database Development",
+      "level": "Intermediate",
+      "keywords": [
+	"SQL Server",
+        "Oracle",
+        "PostgreSQL",
+        "MongoDB"
+      ]
+    },
+    {
+      "name": "Mobile and Web Development",
+      "level": "Intermediate",
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES5, ES2015, ES2016",
+        "Node and Express",
+        "jQuery",
+        "Django",
+        "Flask",
+        "Meteor",
+        "React",
+	"Phonegap, Cordova",
+	"Android",
+	"iOS"
+      ]
+    },
+    {
+      "name": "Game Development",
+      "level": "Master",
+      "keywords": [
+        "Unreal Engine",
+        "Frostbite Engine"
+      ]
+    },    
+    {
+      "name": "Software Process and Application Lifecycle Management",
+      "level": "Master",
+      "keywords": [
+        "Agile/Iterative/Incremental development processes",
+	"Continuous Integration infrastructure with Jenkins and QuickBuild",
+	"Continuous Deployment infrastructure",
+	"Configuration management",
+	"Software systems modeling with UML and SysML",
+	"Version control with Perforce, Subversion and Git"
+      ]
+    },
+    {
+      "name": "Systems Administration",
+      "level": "Intermediate",
+      "keywords": [
+        "Unix systems including HP-UX, Solaris, Linux, and Mac OS X",
+        "Windows Server",
+	"Ansible",
+	"Docker"
+      ]
+    }
+  ]
+}
