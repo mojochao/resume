@@ -19,5 +19,6 @@
   "license": "ISC",
   "homepage": "http://allengooch.me/",
   "dependencies": {
+    "resume-cli": "^0.4.10"
   }
 }
