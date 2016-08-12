@@ -16,6 +16,19 @@
   },
   "work": [
     {
+      "company": "Samba TV",
+      "position": "Senior Full Stack Engineer",
+      "startDate": "2016-05-02",
+      "endDate": "present",
+      "summary": "Software engineer responsible for development of full-stack solutions in TV analytics space.",
+      "highlights": [
+	"React/Redux single-page application development.",
+	"Spark batch analytics systems development.",
+	"Kafka streaming analytics systems development.",
+	"Python web services development."
+      ]
+    },
+    {
       "company": "Zynga",
       "position": "Senior Software Engineer",
       "startDate": "2015-06-28",
@@ -171,7 +184,7 @@
         "Unreal Engine",
         "Frostbite Engine"
       ]
-    },    
+    },
     {
       "name": "Software Process and Application Lifecycle Management",
       "level": "Master",
