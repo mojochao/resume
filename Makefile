@@ -26,10 +26,12 @@ NODE_BIN_DIR     = $(NODE_MODULES_DIR)/.bin
 # See https://github.com/rbardini/resumed for details.
 JSONRESUME_CLI_BIN   ?= $(NODE_BIN_DIR)/resume
 JSONRESUME_CLI_PKG   ?= resume-cli
+
+# We need to install a theme for `resume` to use.
 JSONRESUME_THEME_PKG ?= modern-classic
 
 # The JSON Resume schema is used to validate resume source files.
-JSONRESUME_SCHEMA_FILE ?= resume.schema.json
+JSONRESUME_SCHEMA_FILE ?= $(SOURCE_DIR)/schema.json
 
 # The `jsonschema` command is used to validate resume source files.
 # See https://github.com/sourcemeta/jsonschema for details.
