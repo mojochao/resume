@@ -36,8 +36,11 @@ jobs:
       - name: Build HTML resume
         run: make build format=html
 
+      - name: List output directory
+        run: ls -la out/
+
       - name: Rename HTML file to index.html
-        run: mv out/agooch.resume.jsonresume-theme-even.html out/index.html
+        run: mv out/*.html out/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
