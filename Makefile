@@ -24,11 +24,11 @@ NODE_BIN_DIR     = $(NODE_MODULES_DIR)/.bin
 
 # The `resume` command is used to generate the resume outputs.
 # See https://github.com/rbardini/resumed for details.
-JSONRESUME_CLI_BIN   ?= $(NODE_BIN_DIR)/resume
+JSONRESUME_CLI_BIN   ?= $(NODE_BIN_DIR)/resumed
 JSONRESUME_CLI_PKG   ?= resume-cli
 
 # We need to install a theme for `resume` to use.
-JSONRESUME_THEME_PKG ?= modern-classic
+JSONRESUME_THEME_PKG ?= jsonresume-theme-even
 
 # The JSON Resume schema is used to validate resume source files.
 JSONRESUME_SCHEMA_FILE ?= $(SOURCE_DIR)/schema.json
@@ -38,10 +38,14 @@ JSONRESUME_SCHEMA_FILE ?= $(SOURCE_DIR)/schema.json
 JSONSCHEMA_CLI_BIN ?= $(NODE_BIN_DIR)/jsonschema
 JSONSCHEMA_CLI_PKG ?= @sourcemeta/jsonschema
 
+# The 'resumed' package requires the 'puppeteer' package, but it is apparently
+# not declared as an install-time dependency.
+PUPPETEER_PKG = puppeteer
+
 # Build targets take the following optional arguments.
+format        ?= html
 source_file   ?= $(SOURCE_DIR)/resume.json
-output_format ?= html
-output_file   ?= $(OUTPUT_DIR)/resume.$(output_format)
+output_file   ?= $(OUTPUT_DIR)/$(USER).resume.$(JSONRESUME_THEME_PKG).$(format)
 
 # ==============================================================================
 # Build targets
@@ -66,43 +70,43 @@ help: ## Show this help
 
 .PHONY: vars
 vars: ## Show environment variables used by this Makefile
-	@echo "ROOT_DIR:                $(ROOT_DIR)"
-	@echo "OUTPUT_DIR:              $(OUTPUT_DIR)"
-	@echo "SOURCE_DIR:              $(SOURCE_DIR)"
-	@echo "NODE_MODULES_DIR:        $(NODE_MODULES_DIR)"
-	@echo "NODE_BIN_DIR:            $(NODE_BIN_DIR)"
-	@echo "JSONRESUME_CLI_BIN:      $(JSONRESUME_CLI_BIN)"
-	@echo "JSONRESUME_CLI_PKG:      $(JSONRESUME_CLI_PKG)"
-	@echo "JSONRESUME_THEME_PKG:    $(JSONRESUME_THEME_PKG)"
-	@echo "JSONSCHEMA_CLI_BIN:      $(JSONSCHEMA_CLI_BIN)"
-	@echo "JSONSCHEMA_CLI_PKG:      $(JSONSCHEMA_CLI_PKG)"
-	@echo "source_file:             $(source_file)"
-	@echo "output_file:             $(output_file)"
-	@echo "output_format:           $(output_format)"
+	@echo "ROOT_DIR:             $(ROOT_DIR)"
+	@echo "OUTPUT_DIR:           $(OUTPUT_DIR)"
+	@echo "SOURCE_DIR:           $(SOURCE_DIR)"
+	@echo "NODE_MODULES_DIR:     $(NODE_MODULES_DIR)"
+	@echo "NODE_BIN_DIR:         $(NODE_BIN_DIR)"
+	@echo "JSONRESUME_CLI_BIN:   $(JSONRESUME_CLI_BIN)"
+	@echo "JSONRESUME_CLI_PKG:   $(JSONRESUME_CLI_PKG)"
+	@echo "JSONRESUME_THEME_PKG: $(JSONRESUME_THEME_PKG)"
+	@echo "JSONSCHEMA_CLI_BIN:   $(JSONSCHEMA_CLI_BIN)"
+	@echo "JSONSCHEMA_CLI_PKG:   $(JSONSCHEMA_CLI_PKG)"
+	@echo "format:               $(format)"
+	@echo "source_file:          $(source_file)"
+	@echo "output_file:          $(output_file)"
 
 ##@ Toolchain targets
 
 .PHONY: tools-init
-tools-init: ## Initialize resume toolchain
-	@echo "Initializing resume toolchain ..."
-	@mkdir -p $(OUTPUT_DIR)
+tools-init: ## Initialize resume build toolchain
+	@echo "Initializing resume build toolchain ..."
+	@npm install $(PUPPETEER_PKG)
 	@npm install $(JSONRESUME_CLI_PKG)
 	@npm install $(JSONRESUME_THEME_PKG)
 	@npm install $(JSONSCHEMA_CLI_PKG)
 	@echo "Done."
 
 .PHONY: tools-update
-tools-update: ## Update resume toolchain
+tools-update: ## Update resume build toolchain
 	@echo "Updating resume toolchain ..."
 	@echo "Done."
 
 .PHONY: tools-clean
-tools-clean: ## Clean resume toolchain
+tools-clean: ## Clean resume build toolchain
 	@echo "Cleaning resume toolchain ..."
 	@rm -rf $(NODE_MODULES_DIR)
 	@echo "Done."
 
-##@ Build targets
+##@ Validation targets
 
 .PHONY: check
 check: ## Check resume source for errors
@@ -110,18 +114,21 @@ check: ## Check resume source for errors
 	@$(JSONSCHEMA_CLI_BIN) validate $(JSONRESUME_SCHEMA_FILE) $(source_file)
 	@echo "Done."
 
+##@ Build targets
+
+.PHONY: build
+build: ## Build resume for format (format=)
+	@echo "Building $(format) resume ..."
+	@mkdir -p $(OUTPUT_DIR)
+ifeq ($(format),html)
+	@@$(JSONRESUME_CLI_BIN) render $(source_file) --output $(output_file)  --theme $(JSONRESUME_THEME_PKG)
+else
+	@$(JSONRESUME_CLI_BIN) export $(source_file) --output $(output_file) --format $(format) --theme $(JSONRESUME_THEME_PKG)
+endif
+	@echo "Done."
+
 .PHONY: clean
-clean: ## Clean resume builds
-	@echo "Cleaning all resume builds ..."
-	@rm -rf $(BUILD_DIR)/*
+clean: ## Clean resume builds (format=)
+	@echo "Cleaning $(format) resume ..."
+	@rm -f $(output_file)
 	@echo "Done"
-
-.PHONY: html
-html: ## Build resume html
-	@echo "Building resume html ..."
-	@echo "Done."
-
-.PHONY: pdf
-pdf: ## Build resume pdf
-	@echo "Building resume pdf ..."
-	@echo "Done."
