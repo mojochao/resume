@@ -33,14 +33,14 @@ jobs:
       - name: Validate resume
         run: make lint
 
+      - name: Create output directory
+        run: mkdir -p out
+
       - name: Build HTML resume
-        run: make build format=html
+        run: make build format=html output_file=out/index.html
 
       - name: List output directory
         run: ls -la out/
-
-      - name: Rename HTML file to index.html
-        run: mv out/*.html out/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
