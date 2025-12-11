@@ -5,7 +5,7 @@
     "jsonresume-theme-even": "^0.26.1",
     "jsonresume-theme-flat": "^0.3.7",
     "jsonresume-theme-kendall": "^0.2.0",
-    "puppeteer": "^24.32.1",
+    "puppeteer": "^24.33.0",
     "resume-cli": "^3.0.8",
     "resumed": "^6.1.0"
   }
