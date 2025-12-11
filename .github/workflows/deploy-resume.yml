@@ -31,7 +31,7 @@ jobs:
         run: npm ci
 
       - name: Validate resume
-        run: make check
+        run: make lint
 
       - name: Build HTML resume
         run: make build format=html
