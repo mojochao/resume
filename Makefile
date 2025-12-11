@@ -14,9 +14,10 @@ SHELL = /usr/bin/env bash -o pipefail
 # Build variables
 # ==============================================================================
 
-ROOT_DIR   ?= $(PWD)
-OUTPUT_DIR ?= out
-SOURCE_DIR ?= src
+ROOT_DIR    ?= $(PWD)
+OUTPUT_DIR  ?= out
+SOURCE_DIR  ?= src
+PUBLISH_URL ?= https://mojochao.github.io/resume
 
 # Both of the `jsonschema` and `jsonresume` dependencies use Node.js
 NODE_MODULES_DIR = node_modules
@@ -54,6 +55,7 @@ endif
 
 # Build targets take the following optional arguments.
 format        ?= html
+schema_file   ?= $(SOURCE_DIR)/schema.json
 source_file   ?= $(SOURCE_DIR)/resume.json
 output_file   ?= $(OUTPUT_DIR)/$(USER).resume.$(JSONRESUME_THEME_PKG).$(format)
 
@@ -83,6 +85,7 @@ vars: ## Show environment variables used by this Makefile
 	@echo "ROOT_DIR:             $(ROOT_DIR)"
 	@echo "OUTPUT_DIR:           $(OUTPUT_DIR)"
 	@echo "SOURCE_DIR:           $(SOURCE_DIR)"
+	@echo "PUBLISH_URL:          $(PUBLISH_URL)"
 	@echo "NODE_MODULES_DIR:     $(NODE_MODULES_DIR)"
 	@echo "NODE_BIN_DIR:         $(NODE_BIN_DIR)"
 	@echo "JSONRESUME_CLI_BIN:   $(JSONRESUME_CLI_BIN)"
@@ -93,6 +96,7 @@ vars: ## Show environment variables used by this Makefile
 	@echo "OS:                   $(OS)"
 	@echo "OPEN:                 $(OPEN)"
 	@echo "format:               $(format)"
+	@echo "schema_file:          $(schema_file)"
 	@echo "source_file:          $(source_file)"
 	@echo "output_file:          $(output_file)"
 
@@ -118,7 +122,7 @@ tools-clean: ## Clean resume build toolchain
 	@rm -rf $(NODE_MODULES_DIR)
 	@echo "Done."
 
-##@ Validation targets
+##@ Validate resume targets
 
 .PHONY: check
 check: ## Check resume source for errors
@@ -126,7 +130,7 @@ check: ## Check resume source for errors
 	@$(JSONSCHEMA_CLI_BIN) validate $(JSONRESUME_SCHEMA_FILE) $(source_file)
 	@echo "Done."
 
-##@ Build targets
+##@ Build resume targets
 
 .PHONY: build
 build: ## Build resume for format (format=)
@@ -139,14 +143,22 @@ else
 endif
 	@echo "Done."
 
-.PHONY: preview
-preview: build ## Preview resume for format (format=)
-	@echo "Previewing $(format) resume ..."
-	@$(OPEN) $(output_file) 2>&1 > /dev/null &
-	@echo "Done."
-
 .PHONY: clean
-clean: ## Clean resume for format (format=)
+clean: ## Clean local resume built for format (format=)
 	@echo "Cleaning $(format) resume ..."
 	@rm -f $(output_file)
 	@echo "Done"
+
+##@ Open resume targets
+
+.PHONY: preview
+preview: ## Preview local resume build for format (format=)
+	@echo "Previewing local $(format) resume ..."
+	@$(OPEN) $(output_file) > /dev/null 2>&1
+	@echo "Done."
+
+.PHONY: open
+open: ## Open published resume build for format (format=)
+	@echo "Opening published $(format) resume at $(PUBLISH_URL) ..."
+	@$(OPEN) $(PUBLISH_URL) > /dev/null 2>&1
+	@echo "Done."
