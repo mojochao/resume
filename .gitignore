@@ -4,5 +4,4 @@ out/
 tmp/
 .envrc
 *.html
-*.md
 *.pdf
