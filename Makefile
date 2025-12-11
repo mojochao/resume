@@ -42,6 +42,16 @@ JSONSCHEMA_CLI_PKG ?= @sourcemeta/jsonschema
 # not declared as an install-time dependency.
 PUPPETEER_PKG = puppeteer
 
+# Previewing resume builds differs between Linux and macOS
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Linux)
+  OS   := linux
+  OPEN := xdg-open
+else
+  OS   := macos
+  OPEN := open
+endif
+
 # Build targets take the following optional arguments.
 format        ?= html
 source_file   ?= $(SOURCE_DIR)/resume.json
@@ -80,6 +90,8 @@ vars: ## Show environment variables used by this Makefile
 	@echo "JSONRESUME_THEME_PKG: $(JSONRESUME_THEME_PKG)"
 	@echo "JSONSCHEMA_CLI_BIN:   $(JSONSCHEMA_CLI_BIN)"
 	@echo "JSONSCHEMA_CLI_PKG:   $(JSONSCHEMA_CLI_PKG)"
+	@echo "OS:                   $(OS)"
+	@echo "OPEN:                 $(OPEN)"
 	@echo "format:               $(format)"
 	@echo "source_file:          $(source_file)"
 	@echo "output_file:          $(output_file)"
@@ -127,8 +139,14 @@ else
 endif
 	@echo "Done."
 
+.PHONY: preview
+preview: build ## Preview resume for format (format=)
+	@echo "Previewing $(format) resume ..."
+	@$(OPEN) $(output_file) 2>&1 > /dev/null &
+	@echo "Done."
+
 .PHONY: clean
-clean: ## Clean resume builds (format=)
+clean: ## Clean resume for format (format=)
 	@echo "Cleaning $(format) resume ..."
 	@rm -f $(output_file)
 	@echo "Done"
