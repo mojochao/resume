@@ -52,7 +52,7 @@ JSONRESUME_CLI_BIN   ?= $(NODE_BIN_DIR)/resumed
 JSONRESUME_CLI_PKG   ?= resume-cli
 
 # We need to install a theme for `resume` to use.
-JSONRESUME_THEME_PKG ?= jsonresume-theme-even
+JSONRESUME_THEME_PKG ?= jsonresume-theme-cora
 
 # The `resumed` package requires the `puppeteer` package, but it is apparently
 # not declared as an install-time dependency.
