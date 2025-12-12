@@ -61,7 +61,8 @@ PUPPETEER_PKG = puppeteer
 # Build targets take the following optional arguments.
 format      ?= html
 schema_file ?= $(SOURCE_DIR)/schema.json
-input_file  ?= $(SOURCE_DIR)/resume.json
+#input_file  ?= $(SOURCE_DIR)/resume.json
+input_file  ?= $(SOURCE_DIR)/platform-engr.resume.json
 output_file ?= $(OUTPUT_DIR)/$(USER).resume.$(JSONRESUME_THEME_PKG).$(format)
 
 # ==============================================================================

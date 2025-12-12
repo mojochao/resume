@@ -37,10 +37,10 @@ jobs:
         run: mkdir -p out
 
       - name: Build HTML resume
-        run: make build format=html output_file=out/index.html
+        run: make build format=html input_file=src/platform-engr.resume.json output_file=out/index.html
 
       - name: List output directory
-        run: ls -la out/
+        run: ls -la out
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
